@@ -14,6 +14,7 @@ public class HomeController {
     }
     @RequestMapping("/courses")
     public String displayCourses() {
+
         return "courses.html";
     }
 

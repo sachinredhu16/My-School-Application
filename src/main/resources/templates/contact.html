@@ -45,7 +45,7 @@ Author URL: http://w3layouts.com
             </div>
             <div class="row contact-block">
                 <div class="col-md-7 contact-right">
-<!--                    this ul statement is used to catch error and show them in UI-->
+<!--                    this ul statement is used to catch alert and show them in UI-->
                     <ul>
                         <li class="alert alert-danger" role="alert"
                             th:each="error : ${#fields.errors('contact.*')}" th:text="${error}" />
