@@ -18,6 +18,7 @@ public class DashboardController {
     public String showDashboard(Model model, Authentication authentication, HttpSession session) throws Exception {
         Person person = personRepository.readByEmail(authentication.getName());
 
+
         model.addAttribute("username",person.getName());
         model.addAttribute("roles",authentication.getAuthorities().toString());
 
